@@ -1,0 +1,819 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/*
+#home {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container {
+  min-width: 300px;
+}*/
+#barra_superior {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(49,55,87,1) 26%, rgba(132,151,176,0.8421743697478992) 71%);
+}
+@media screen and (min-width: 970px){
+  #boton2 {
+    display:none;
+  }
+  #border_datos {
+    border: 4px solid black;
+    width: 30%;
+    padding:1%;
+    margin: 15px;
+    margin-left: 40%;
+  }
+
+  #campo_izquierdo {
+    width: 350px;
+    height: 100%;
+    margin-left: 20px;
+    background-color: #f1f0f4;
+  }
+  #contenido {
+    margin: 1%;
+  }
+  /*.lado_derecho {
+    margin-left: 30%;
+  }*/
+  #title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.125em;
+    text-align: center;
+    color: white;
+  }
+  #linea {
+    border-top: 1px solid white;
+    height: 2px;
+    padding: 0;
+    margin: 20px auto 0 auto;
+  }
+  #perfil {
+    background: linear-gradient(90deg, rgba(49,55,87,1) 12%, rgba(132,151,176,0.8421743697478992) 36%);
+    margin-bottom:1%;
+    margin-top: 1%;
+  }
+  ul {
+    list-style: none;
+  }
+
+  .container {
+    width: 100%;
+    margin-left: 3%;
+  }
+  #negrita {
+    font-weight: bold;
+  }
+  .ubicacion {
+    display: flex;
+  }
+  #propiedades {
+    margin-left: 5%;
+  }
+  #img {
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 200px;
+  }
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  li {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #botton {
+    display: none;
+  }
+  #boton {
+    border: 1px solid #2e518b;
+    padding: 5px;
+    background-color: #2e518b;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Helvetica", sans-serif;
+    border-radius: 50px;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  /*----Estilos del Formulario---*/
+
+  body #modal {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0, 5);
+    transition: all, 500ms, ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+  #btn-modal:checked ~ #modal {
+    opacity: 1;
+    visibility: visible;
+  }
+  #contenedor-modal {
+    width: 450px;
+    height: 500px;
+    margin: auto;
+    background-color: lavender;
+    box-shadow: 1px 7px 25px rgba(0, 0, 0, 0, 6);
+    transition: all, 500ms, ease;
+    position: relative;
+    border: 1px solid #050505;
+  }
+  #contenedor-modal header {
+    padding: 10px;
+    background: #2e518b;
+    color: #ffffff;
+  }
+  #contenedor-modal #label-Uno {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  #btn-modal {
+    display: none;
+  }
+  .lbl-modal {
+    border: 1px solid #2e518b;
+    padding: 5px;
+    background-color: #2e518b;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Helvetica", sans-serif;
+    border-radius: 50px;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  .botones {
+    display: flex;
+  }
+
+  /*---Estilos formulario---*/
+  #formulario {
+    display: block;
+    margin-left: 5px;
+  }
+  #formulario label {
+    font-size: 25px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+  #formulario input {
+    padding: 5px;
+  }
+  #formulario input:focus {
+    border-color: #18a383;
+  }
+  #boton-dos {
+    border: 1px solid #2e518b;
+    padding: 5px;
+    background-color: #2e518b;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Helvetica", sans-serif;
+    border-radius: 50px;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  /*----Estilo btn whatsapp----*/
+  .btn-btn-wsp {
+    margin: 15px;
+    border: 1px solid #2e518b;
+    padding: 5px;
+    background-color: #2e518b;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Helvetica", sans-serif;
+    border-radius: 50px;
+    margin: 10px;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 700px) {
+  #boton2 {
+    display:none;
+  }
+  #barra_superior {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(49,55,87,1) 26%, rgba(132,151,176,0.8421743697478992) 71%);
+  }
+  
+  #border_datos {
+    border: 4px solid black;
+    margin: 15px;
+    margin-left: 40%;
+  }
+  #campo_izquierdo {
+    width: 350px;
+    height: 100%;
+    margin-left: 20px;
+    background-color: #f1f0f4;
+  }
+  #contenido {
+    margin: 1%;
+  }
+  /*.lado_derecho {
+    margin-left: 30%;
+  }*/
+  #title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.125em;
+    text-align: center;
+    color: white;
+  }
+  #linea {
+    border-top: 1px solid white;
+    height: 2px;
+    padding: 0;
+    margin: 20px auto 0 auto;
+  }
+  #perfil {
+    background: linear-gradient(90deg, rgba(49,55,87,1) 12%, rgba(132,151,176,0.8421743697478992) 36%);
+    margin-bottom:1%;
+    margin-top: 1%;
+  }
+  ul {
+    list-style: none;
+  }
+  
+  .container {
+    width: 100%;
+    margin-left: 3%;
+  }
+  #negrita {
+    font-weight: bold;
+  }
+  .ubicacion {
+    display: flex;
+  }
+  #propiedades {
+    margin-left: 5%;
+  }
+  #img {
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 200px;
+  }
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  li {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #botton {
+    display: none;
+  }
+  #boton {
+    border: 1px solid #2e518b;
+    padding: 5px;
+    background-color: #2e518b;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Helvetica", sans-serif;
+    border-radius: 50px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  /*----Estilos del Formulario---*/
+  
+  body #modal {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0, 5);
+    transition: all, 500ms, ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+  #btn-modal:checked ~ #modal {
+    opacity: 1;
+    visibility: visible;
+  }
+  #contenedor-modal {
+    width: 450px;
+    height: 500px;
+    margin: auto;
+    background-color: lavender;
+    box-shadow: 1px 7px 25px rgba(0, 0, 0, 0, 6);
+    transition: all, 500ms, ease;
+    position: relative;
+    border: 1px solid #050505;
+  }
+  #contenedor-modal header {
+    padding: 10px;
+    background: #2e518b;
+    color: #ffffff;
+  }
+  #contenedor-modal #label-Uno {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  #btn-modal {
+    display: none;
+  }
+  .lbl-modal {
+    border: 1px solid #2e518b;
+    padding: 5px;
+    background-color: #2e518b;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Helvetica", sans-serif;
+    border-radius: 50px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .botones {
+    display: flex;
+  }
+  
+  /*---Estilos formulario---*/
+  #formulario {
+    display: block;
+    margin-left: 5px;
+  }
+  #formulario label {
+    font-size: 25px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+  #formulario input {
+    padding: 5px;
+  }
+  #formulario input:focus {
+    border-color: #18a383;
+  }
+  #boton-dos {
+    border: 1px solid #2e518b;
+    padding: 5px;
+    background-color: #2e518b;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Helvetica", sans-serif;
+    border-radius: 50px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  /*----Estilo btn whatsapp----*/
+  .btn-btn-wsp {
+    margin: 15px;
+    border: 1px solid #2e518b;
+    padding: 5px;
+    background-color: #2e518b;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Helvetica", sans-serif;
+    border-radius: 50px;
+    margin: 10px;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 500px) {
+  #boton2 {
+    display:none;
+  }
+  #barra_superior {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(49,55,87,1) 26%, rgba(132,151,176,0.8421743697478992) 71%);
+  }
+  
+  #border_datos {
+    border: 4px solid black;
+    margin: 15px;
+    margin-left: 40%;
+  }
+  #campo_izquierdo {
+    height: 100%;
+    margin-left: 20px;
+    background-color: #f1f0f4;
+  }
+  #contenido {
+    margin: 1%;
+  }
+  /*.lado_derecho {
+    margin-left: 30%;
+  }*/
+  #title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.125em;
+    text-align: center;
+    color: white;
+  }
+  #linea {
+    border-top: 1px solid white;
+    height: 2px;
+    padding: 0;
+    margin: 20px auto 0 auto;
+  }
+  #perfil {
+    background: linear-gradient(90deg, rgba(49,55,87,1) 12%, rgba(132,151,176,0.8421743697478992) 36%);
+    margin-bottom:1%;
+    margin-top: 1%;
+  }
+  ul {
+    list-style: none;
+  }
+  
+  .container {
+    width: 100%;
+    margin-left: 3%;
+  }
+  #negrita {
+    font-weight: bold;
+  }
+  .ubicacion {
+    display: flex;
+  }
+  #propiedades {
+    margin-left: 5%;
+  }
+  #img {
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 200px;
+  }
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  li {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #botton {
+    display: none;
+  }
+  #boton {
+    border: 1px solid #2e518b;
+    padding: 5px;
+    background-color: #2e518b;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Helvetica", sans-serif;
+    border-radius: 50px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  /*----Estilos del Formulario---*/
+  
+  body #modal {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0, 5);
+    transition: all, 500ms, ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+  #btn-modal:checked ~ #modal {
+    opacity: 1;
+    visibility: visible;
+  }
+  #contenedor-modal {
+    width: 450px;
+    height: 500px;
+    margin: auto;
+    background-color: lavender;
+    box-shadow: 1px 7px 25px rgba(0, 0, 0, 0, 6);
+    transition: all, 500ms, ease;
+    position: relative;
+    border: 1px solid #050505;
+  }
+  #contenedor-modal header {
+    padding: 10px;
+    background: #2e518b;
+    color: #ffffff;
+  }
+  #contenedor-modal #label-Uno {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  #btn-modal {
+    display: none;
+  }
+  .lbl-modal {
+    border: 1px solid #2e518b;
+    padding: 5px;
+    background-color: #2e518b;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Helvetica", sans-serif;
+    border-radius: 50px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .botones {
+    display: flex;
+  }
+  
+  /*---Estilos formulario---*/
+  #formulario {
+    display: block;
+    margin-left: 5px;
+  }
+  #formulario label {
+    font-size: 25px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+  #formulario input {
+    padding: 5px;
+  }
+  #formulario input:focus {
+    border-color: #18a383;
+  }
+  #boton-dos {
+    border: 1px solid #2e518b;
+    padding: 5px;
+    background-color: #2e518b;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Helvetica", sans-serif;
+    border-radius: 50px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  /*----Estilo btn whatsapp----*/
+  .btn-btn-wsp {
+    margin: 15px;
+    border: 1px solid #2e518b;
+    padding: 5px;
+    background-color: #2e518b;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Helvetica", sans-serif;
+    border-radius: 50px;
+    margin: 10px;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 500px) {
+  #boton2 {
+    display:block;
+    border: 1px solid #2e518b;
+    padding: 5px;
+    background-color: #2e518b;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Helvetica", sans-serif;
+    border-radius: 50px;
+    margin: 10px;
+    cursor: pointer;
+    
+  }
+  #barra_superior {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(49,55,87,1) 26%, rgba(132,151,176,0.8421743697478992) 71%);
+  }
+  
+  #border_datos {
+    border: 4px solid black;
+    margin: 15px;
+    margin-left: 40%;
+  }
+  #campo_izquierdo {
+    position: relative;
+    z-index:2;
+    display:none;
+    height: 100%;
+    margin-left: 20px;
+    background-color: #f1f0f4;
+  }
+  #contenido {
+    margin: 1%;
+  }
+  /*.lado_derecho {
+    margin-left: 30%;
+  }*/
+  #title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.125em;
+    text-align: center;
+    color: white;
+  }
+  #linea {
+    border-top: 1px solid white;
+    height: 2px;
+    padding: 0;
+    margin: 20px auto 0 auto;
+  }
+  #perfil {
+    background: linear-gradient(90deg, rgba(49,55,87,1) 12%, rgba(132,151,176,0.8421743697478992) 36%);
+    margin-bottom:1%;
+    margin-top: 1%;
+  }
+  ul {
+    list-style: none;
+  }
+  
+  .container {
+    width: 100%;
+    margin-left: 3%;
+    z-index:1;
+  }
+  #negrita {
+    font-weight: bold;
+  }
+  .ubicacion {
+    display: flex;
+  }
+  #propiedades {
+    margin-left: 5%;
+  }
+  #img {
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 200px;
+  }
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  li {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #botton {
+    display: none;
+  }
+  #boton {
+    border: 1px solid #2e518b;
+    padding: 5px;
+    background-color: #2e518b;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Helvetica", sans-serif;
+    border-radius: 50px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  /*----Estilos del Formulario---*/
+  
+  body #modal {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0, 5);
+    transition: all, 500ms, ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+  #btn-modal:checked ~ #modal {
+    opacity: 1;
+    visibility: visible;
+  }
+  #contenedor-modal {
+    width: 450px;
+    height: 500px;
+    margin: auto;
+    background-color: lavender;
+    box-shadow: 1px 7px 25px rgba(0, 0, 0, 0, 6);
+    transition: all, 500ms, ease;
+    position: relative;
+    border: 1px solid #050505;
+  }
+  #contenedor-modal header {
+    padding: 10px;
+    background: #2e518b;
+    color: #ffffff;
+  }
+  #contenedor-modal #label-Uno {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  #btn-modal {
+    display: none;
+  }
+  .lbl-modal {
+    border: 1px solid #2e518b;
+    padding: 5px;
+    background-color: #2e518b;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Helvetica", sans-serif;
+    border-radius: 50px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .botones {
+    display: flex;
+  }
+  
+  /*---Estilos formulario---*/
+  #formulario {
+    display: block;
+    margin-left: 5px;
+  }
+  #formulario label {
+    font-size: 25px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+  #formulario input {
+    padding: 5px;
+  }
+  #formulario input:focus {
+    border-color: #18a383;
+  }
+  #boton-dos {
+    border: 1px solid #2e518b;
+    padding: 5px;
+    background-color: #2e518b;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Helvetica", sans-serif;
+    border-radius: 50px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  /*----Estilo btn whatsapp----*/
+  .btn-btn-wsp {
+    margin: 15px;
+    border: 1px solid #2e518b;
+    padding: 5px;
+    background-color: #2e518b;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Helvetica", sans-serif;
+    border-radius: 50px;
+    margin: 10px;
+    cursor: pointer;
+  }
+}

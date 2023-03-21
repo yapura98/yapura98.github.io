@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="home">
+      <div>
+        <div id="barra_superior">
+          <h2 id="title"></h2>
+          <div id="linea"></div>
+        </div>
+        <div class="ubicacion">
+          
+          <div class="lado_izquierdo">
+            <div id="border_datos">              
+              <div id="contenido"></div>
+            </div>
+            <button id="boton2" class="chico" onclick="mostrar('campo_izquierdo')">Mas Informacion</button>
+            <div class="container">
+              <h2 id="perfil">PERFIL</h2>
+              <div id="container">
+                <p>
+                  Soy una persona organizada que cumple con los labores y
+                  requerimientos que se le exigen, con capacidad, puntualidad,
+                  responsabilidad y buena presencia. Me considero una persona
+                  seria al momento de trabajar y con altas expectativas en
+                  crecer laboralmente.
+                </p>
+              </div>
+              <h2 id="perfil">FORMACIÓN</h2>
+              <div id="container">
+                <p id="negrita">
+                  Cursando Programador Universitario <br />
+                  Facultad Ciencias Exactas
+                  <br /><br />
+                </p>
+                <p id="negrita">Secundario Completo - 2017</p>
+                <p>Esc. Gral. Belgrano</p>
+              </div>
+
+              <div>
+                <h2 id="perfil">EXPERIENCIA LABORAL</h2>
+                <div id="container">
+                  <p>Diciembre 2018 - Actualidad</p>
+                  <p id="negrita">
+                    Soporte Atencion al cliente
+                  </p>
+                  <br />
+                  <p>Temporada Enero 2015 - Marzo 2018</p>
+                  <p id="negrita">
+                    Mozo  en eventos
+                  </p>
+                  <br />
+                  <p>Marzo a Diciembre 2015</p>
+                  <p id="negrita">Lavadero de Autos en Yerba Buena</p>
+                  <br />
+                  <p>Febrero a Diciembre 2014</p>
+                  <p id="negrita">Atencion al cliente en un Drugstore</p>
+                </div>
+              </div>
+                <h2 id="perfil">OBJETIVOS</h2>
+                  <p>
+                    Busco explorar y desarrollarme dentro de su empresa, para
+                    adquirir experiencias en conjunto a los conocimientos y
+                    herramientas brindadas por la misma.
+                  </p>
+            </div>
+            <button class="btn" id="botton">Traer Datos</button>
+          </div>
+
+          <div class="lado_derecho">
+            <div id="campo_izquierdo">
+              <div id="propiedades">
+                <div id="img"></div>
+                <br />
+                <p id="propiedadesDos"></p>
+
+                <div>
+                  <button id="boton" onclick="mostrar('aptitudes')">Aptitudes</button>
+                  <ul id="aptitudes" style="display:none;">
+                    <li>Ser proactivo</li>
+                    <li>Ser Multifacetico</li>
+                    <li>Ser Team Player</li>
+                    <li>Tener ganas de trabajar</li>
+                  </ul>
+                  <br />
+                  <button id="boton" onclick="mostrar('datos')">Datos de Interes</button>
+                  <ul id="datos" style="display:none;">
+                    <li>13431414</li>
+                    <li>13414</li>
+                    <li>5351 asdasd</li>
+                    <li>54t45t4 trabajar</li>
+                  </ul>
+                  <br />
+                  <button id="boton" onclick="mostrar('habilidades')">Habilidades</button>
+                  <ul id="habilidades" style="display:none;">
+                    <li>Hola</li>
+                    <li>Ser sad</li>
+                    <li>Serqeram asdasd</li>
+                    <li>qreede trabajar</li>
+                  </ul>
+                  <br /> 
+                  <button id="boton" onclick="mostrar('idiomas')">Idiomas</button>
+                  <ul id="idiomas" style="display:none;">
+                    <li>Español</li>
+                    <li>Ingles</li>
+                    <li>Portugues</li>
+                  </ul>
+                  <br/>                
+                  <br/>
+                </div>
+                <div class="botones">
+                  <div class="formulario">
+                    <input type="checkbox" id="btn-modal" />
+                    <label for="btn-modal" class="lbl-modal">CONTACTARSE</label>
+                    <div id="modal">
+                      <div id="contenedor-modal">
+                        <header>Contactarse</header>
+                        <label for="btn-modal" id="label-Uno">X</label>
+                        <div id="contenido-modal">
+                          <form
+                            action="https://formsubmit.co/gabrielbrgn4701@gmail.com"
+                            method="POST"
+                            id="formulario"
+                          >
+                            <label for="Nombre" id="formulario">Nombre</label>
+                            <input type="text" name="name" />
+            
+                            <label for="email" id="formulario">Correo Electronico</label>
+                            <input type="email" name="email" />
+            
+                            <label for="subject" id="formulario">Asunto</label>
+                            <input type="text" name="subject" />
+            
+                            <label for="comments" id="formulario">Contactarse</label>
+                            <textarea name="comments" cols="55" rows="10"></textarea>
+            
+                            <input type="submit" value="Enviar" id="boton-dos" />
+                            <input
+                              type="hidden"
+                              name="_next"
+                              value="http://127.0.0.1:5500"
+                            />
+                            <input type="hidden" name="_captcha" value="false" />
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <div class="whatsapp">
+                    <a class="btn-btn-wsp" href="https://web.whatsapp.com" target="_blank"
+                      >whatsapp</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="ajax.js"></script>
+  </body>
+</html>
